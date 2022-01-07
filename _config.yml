@@ -1,0 +1,19 @@
+lang: en-US
+title: zudoku
+email: zudoku@jfs.sh
+description: Intuitive Zero-Knowledge Primer.
+baseurl: ""
+url: "https://zudoku.xyz"
+
+# Author information
+author:
+  name: Jan Ferdinand Sauer
+  url: "https://jfs.sh"
+
+# Build settings
+remote_theme: mmistakes/jekyll-theme-basically-basic@1.4.5
+
+# custom footer (hackish)
+copyright: '[![CC BY 4.0](assets/pic/cc_by.png)](https://creativecommons.org/licenses/by/4.0/) \|
+    made with 💖 by [jfs](mailto:zudoku@jfs.sh) \|
+    [improve this page](https://github.com/42ndTowel/zudoku)'
