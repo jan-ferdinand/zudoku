@@ -1,0 +1,1517 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70218" creator="Ipe 7.2.23">
+<info created="D:20220108135940" modified="D:20220108153203" title="zudoku_board" author="Jan Ferdinand Sauer"/>
+<preamble>\usepackage[sfdefault]{FiraSans}</preamble>
+<ipestyle name="basic">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/ptarc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fptarc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+0.5 0 0 0.5 0 0 e
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+-0.5 -0.5 m
+0.5 -0.5 l
+0.5 0.5 l
+-0.5 0.5 l
+h
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-normal(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.3 0 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.3 0 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+1 0 m
+0 0.333 l
+0 -0.333 l
+h
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+1 0 m
+0 0.333 l
+0 -0.333 l
+h
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<anglesize name="22.5 deg" value="22.5"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="90 deg" value="90"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="blue" value="0 0 1"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="gray" value="0.745"/>
+<color name="green" value="0 1 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="red" value="1 0 0"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="yellow" value="1 1 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="30%" value="0.3"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="75%" value="0.75"/>
+<pen name="fat" value="1.2"/>
+<pen name="heavier" value="0.8"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<tiling name="falling" angle="-60" step="4" width="1"/>
+<tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<page>
+<layer name="big_grid"/>
+<layer name="small_grid"/>
+<layer name="numbers_dark"/>
+<layer name="numbers_light"/>
+<layer name="al_escargot"/>
+<layer name="al_escargot_sol"/>
+<layer name="cards_bg"/>
+<layer name="cards_nums"/>
+<layer name="cards_back"/>
+<layer name="vector_from_14pt_grid_to_page_center"/>
+<view layers="big_grid small_grid numbers_dark numbers_light" active="vector_from_14pt_grid_to_page_center"/>
+<view layers="big_grid small_grid al_escargot" active="al_escargot"/>
+<view layers="big_grid small_grid al_escargot al_escargot_sol" active="al_escargot_sol"/>
+<view layers="cards_bg cards_nums" active="cards_bg"/>
+<view layers="cards_bg cards_back" active="vector_from_14pt_grid_to_page_center"/>
+<path layer="cards_bg" matrix="1 0 0 1 -10.4942 0.996394" fill="0.145 0.165 0.204">
+42 742 m
+42 98 l
+574 98 l
+574 742 l
+h
+</path>
+<path layer="big_grid" matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+56 728 m
+560 728 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+56 560 m
+560 560 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+56 392 m
+560 392 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+56 224 m
+560 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+56 728 m
+56 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+224 728 m
+224 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+392 728 m
+392 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="ultrafat" cap="1">
+560 728 m
+560 224 l
+</path>
+<path layer="small_grid" matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+112 728 m
+112 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+168 728 m
+168 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+280 728 m
+280 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+336 728 m
+336 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+448 728 m
+448 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+504 728 m
+504 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 672 m
+560 672 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 616 m
+560 616 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 504 m
+560 504 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 448 m
+560 448 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 336 m
+560 336 l
+</path>
+<path matrix="1 0 0 1 -10.4942 -55.0036" stroke="0.145 0.165 0.204" pen="heavier" cap="1">
+56 280 m
+560 280 l
+</path>
+<text layer="numbers_dark" matrix="1 0 0 1 -10.4942 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text layer="al_escargot" matrix="1 0 0 1 -10.4942 -167.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -223.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 101.506 -279.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 101.506 -335.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 45.5058 -391.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 -10.4942 -447.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 -10.4942 -503.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 45.5058 -559.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 101.506 -615.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 269.506 -167.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 213.506 -223.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 157.506 -279.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 157.506 -335.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 213.506 -391.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 269.506 -447.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 381.506 -167.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 437.506 -223.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 325.506 -279.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 325.506 -335.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 437.506 -391.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 381.506 -503.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 437.506 -559.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 325.506 -615.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text layer="numbers_light" matrix="1 0 0 1 -10.4942 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text layer="cards_nums" matrix="1 0 0 1 -10.4942 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -167.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -223.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -279.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -335.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -391.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -447.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -503.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -559.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -615.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text layer="numbers_dark" matrix="1 0 0 1 -10.4942 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 45.5058 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 101.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 157.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 213.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 269.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 325.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 381.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 437.506 -55.0036" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text layer="numbers_light" matrix="1 0 0 1 -10.4942 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 45.5058 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 101.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 157.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 213.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 269.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 325.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 381.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 437.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text layer="al_escargot_sol" matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 630" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 630" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 630" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 630" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 630" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 630" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 574" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 574" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 574" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 574" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 574" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 574" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 518" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 518" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 518" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 518" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 518" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 518" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 462" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 462" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 462" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 462" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 462" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 462" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 406" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 406" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 406" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 406" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 406" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 406" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 350" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 350" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 350" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 350" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 350" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 350" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 350" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 294" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 294" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 294" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 294" stroke="0.145 0.165 0.204" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 294" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 294" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 294" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 238" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 238" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 238" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 238" stroke="0.145 0.165 0.204" type="label" width="24.309" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">3</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 238" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="420 238" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 238" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="84 182" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 182" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 182" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 182" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="364 182" stroke="0.145 0.165 0.204" type="label" width="21.071" height="28.643" depth="0" halign="center" valign="baseline" size="50">1</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="476 182" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
+<text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="532 182" stroke="0.145 0.165 0.204" type="label" width="24.508" height="28.643" depth="5.33" halign="center" valign="baseline" size="50">4</text>
+<path layer="cards_bg" matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1" cap="1">
+112 742 m
+112 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1" cap="1">
+168 742 m
+168 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1" cap="1">
+56 742 m
+56 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+224 742 m
+224 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+280 742 m
+280 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+336 742 m
+336 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+392 742 m
+392 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+448 742 m
+448 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+504 742 m
+504 98 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+560 742 m
+560 98 l
+</path>
+<text layer="cards_nums" matrix="1 0 0 1 -10.4942 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -111.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<text matrix="1 0 0 1 -10.4942 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text matrix="1 0 0 1 45.5058 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.753" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{2}</text>
+<text matrix="1 0 0 1 101.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
+<text matrix="1 0 0 1 157.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.75" height="28.642" depth="5.48" halign="center" valign="baseline" size="50">\bfseries{4}</text>
+<text matrix="1 0 0 1 213.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
+<text matrix="1 0 0 1 269.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.194" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{6}</text>
+<text matrix="1 0 0 1 325.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
+<text matrix="1 0 0 1 381.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
+<text matrix="1 0 0 1 437.506 -671.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
+<path layer="cards_bg" matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 672 m
+574 672 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 728 m
+574 728 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 616 m
+574 616 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 560 m
+574 560 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 504 m
+574 504 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 448 m
+574 448 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 392 m
+574 392 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 336 m
+574 336 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 280 m
+574 280 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 224 m
+574 224 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 168 m
+574 168 l
+</path>
+<path matrix="1 0 0 1 -10.4942 0.996394" stroke="0.918" pen="0.1">
+42 112 m
+574 112 l
+</path>
+<group layer="cards_back" matrix="1 0 0 1 -10.4942 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -83.0036" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -139.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -195.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -251.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -307.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -363.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -419.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -475.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -531.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -587.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 -10.4942 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 45.5058 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 101.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 157.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 213.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 269.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 325.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 381.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<group matrix="1 0 0 1 437.506 -643.004" clip="56.4394 811.523 m
+56.4394 756.853 l
+111.542 756.853 l
+111.559 811.508 l
+h
+">
+<text matrix="0.707107 0.707107 -0.707107 0.707107 466.422 202.73" pos="140 686" stroke="0.918" type="label" width="56.07" height="41.871" depth="0" halign="center" valign="center" size="56">\bfseries{zk}</text>
+</group>
+<path layer="vector_from_14pt_grid_to_page_center" stroke="0.569 0.255 0.675" fill="gold" pen="heavier">
+308 420 m
+297.506 420.996 l
+</path>
+</page>
+</ipe>
