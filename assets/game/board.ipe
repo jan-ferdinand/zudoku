@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.23">
-<info created="D:20220108135940" modified="D:20220108153203" title="zudoku_board" author="Jan Ferdinand Sauer"/>
+<info created="D:20220108135940" modified="D:20220108203603" title="zudoku_board" author="Jan Ferdinand Sauer"/>
 <preamble>\usepackage[sfdefault]{FiraSans}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -315,15 +315,15 @@ h
 <layer name="small_grid"/>
 <layer name="numbers_dark"/>
 <layer name="numbers_light"/>
-<layer name="al_escargot"/>
-<layer name="al_escargot_sol"/>
+<layer name="ai_escargot"/>
+<layer name="ai_escargot_sol"/>
 <layer name="cards_bg"/>
 <layer name="cards_nums"/>
 <layer name="cards_back"/>
 <layer name="vector_from_14pt_grid_to_page_center"/>
-<view layers="big_grid small_grid numbers_dark numbers_light" active="vector_from_14pt_grid_to_page_center"/>
-<view layers="big_grid small_grid al_escargot" active="al_escargot"/>
-<view layers="big_grid small_grid al_escargot al_escargot_sol" active="al_escargot_sol"/>
+<view layers="big_grid small_grid numbers_dark numbers_light" active="ai_escargot_sol"/>
+<view layers="big_grid small_grid ai_escargot" active="ai_escargot"/>
+<view layers="big_grid small_grid ai_escargot ai_escargot_sol" active="ai_escargot_sol"/>
 <view layers="cards_bg cards_nums" active="cards_bg"/>
 <view layers="cards_bg cards_back" active="vector_from_14pt_grid_to_page_center"/>
 <path layer="cards_bg" matrix="1 0 0 1 -10.4942 0.996394" fill="0.145 0.165 0.204">
@@ -422,7 +422,7 @@ h
 <text matrix="1 0 0 1 325.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="23.711" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{7}</text>
 <text matrix="1 0 0 1 381.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="28.941" height="34.876" depth="0.84" halign="center" valign="baseline" size="50">\bfseries{8}</text>
 <text matrix="1 0 0 1 437.506 -111.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
-<text layer="al_escargot" matrix="1 0 0 1 -10.4942 -167.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
+<text layer="ai_escargot" matrix="1 0 0 1 -10.4942 -167.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="22.516" height="28.643" depth="0" halign="center" valign="baseline" size="50">\bfseries{1}</text>
 <text matrix="1 0 0 1 45.5058 -223.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="25.654" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{3}</text>
 <text matrix="1 0 0 1 101.506 -279.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="27.895" height="28.644" depth="6.25" halign="center" valign="baseline" size="50">\bfseries{9}</text>
 <text matrix="1 0 0 1 101.506 -335.004" transformations="translations" pos="84 798" stroke="0.145 0.165 0.204" type="label" width="26.152" height="28.644" depth="6.15" halign="center" valign="baseline" size="50">\bfseries{5}</text>
@@ -553,7 +553,7 @@ h
 <text matrix="1 0 0 1 325.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="22.366" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">7</text>
 <text matrix="1 0 0 1 381.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
 <text matrix="1 0 0 1 437.506 -727.004" transformations="translations" pos="84 798" stroke="0.918" type="label" width="26.152" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">9</text>
-<text layer="al_escargot_sol" matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 630" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
+<text layer="ai_escargot_sol" matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="140 630" stroke="0.145 0.165 0.204" type="label" width="26.899" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">6</text>
 <text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="196 630" stroke="0.145 0.165 0.204" type="label" width="24.707" height="28.643" depth="0" halign="center" valign="baseline" size="50">2</text>
 <text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="252 630" stroke="0.145 0.165 0.204" type="label" width="27.447" height="34.379" depth="0.59" halign="center" valign="baseline" size="50">8</text>
 <text matrix="1 0 0 1 -10.4942 0.996394" transformations="translations" pos="308 630" stroke="0.145 0.165 0.204" type="label" width="24.408" height="28.636" depth="5.86" halign="center" valign="baseline" size="50">5</text>
@@ -1513,5 +1513,10 @@ h
 308 420 m
 297.506 420.996 l
 </path>
+<use name="mark/disk(sx)" pos="0 842" size="normal" stroke="0.145 0.165 0.204"/>
+<use layer="big_grid" name="mark/disk(sx)" pos="0 842" size="normal" stroke="0.145 0.165 0.204"/>
+<use name="mark/disk(sx)" pos="595 842" size="normal" stroke="0.145 0.165 0.204"/>
+<use name="mark/disk(sx)" size="normal" stroke="0.145 0.165 0.204"/>
+<use name="mark/disk(sx)" pos="595 0" size="normal" stroke="0.145 0.165 0.204"/>
 </page>
 </ipe>
