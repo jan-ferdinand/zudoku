@@ -61,7 +61,7 @@ The board is now completely filled with cards facing down.
 
 Now it's Victor's turn.
 Theoretically, he could just turn all or some cards around – but that way he'd learn something about the solution!
-Instead, Victor chooses whether he wants to check the Sudokus's rows, or the columns, or the boxes.
+Instead, Victor chooses whether he wants to check the Sudoku's rows, or the columns, or the boxes.
 
 Victor chooses to check the rows.
 He takes all nine cards in the first row, shuffles them, and turns them around.
@@ -69,7 +69,7 @@ Then he checks that all digits, 1 to 9, are there – none missing, none double.
 Since Peggy has put the correct solution for the Sudoku, this is exactly what he finds.
 
 Shuffling the cards makes sure that Victor does not know the position of a card on the board.
-This way, even after turning the cards around, he doesn't know anynthing about the solution.
+This way, even after turning the cards around, he doesn't know anything about the solution.
 
 He proceeds to the next row, takes the cards, shuffles them, then turns them around.
 Again, he checks that the rules of Sudoku are followed – all digits appear exactly once.
@@ -98,14 +98,14 @@ But why can he be so sure that Peggy didn't cheat?
 
 ## catching cheaters
 
-The mischievious Mallory overheard Peggy and Victor perform **zudoku**.
+The mischievous Mallory overheard Peggy and Victor perform **zudoku**.
 Mallory is not a great Sudoku puzzler, and she does not know the solution.
 However, she thinks that using **zudoku**, she can trick Victor into believing that she knows the solution.
 
 # further reading
 
 For a technical, in-depth, hands-on tutorial on STARKs, I recommend [Alan Szepieniec](https://asz.ink/)'s excellent [STARK Anatomy](https://aszepieniec.github.io/stark-anatomy/).
-Another great ressource, foccussed on SNARKs, is [Z-Cash's technology overview](https://z.cash/technology/zksnarks/).
+Another great resource, focused on SNARKs, is [Z-Cash's technology overview](https://z.cash/technology/zksnarks/).
 
 # credits
 
