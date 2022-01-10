@@ -15,11 +15,18 @@ Peggy and Victor can use the **zudoku** Zero-Knowledge Proof System to convince 
 
 **zudoku** is immediately useful in proving knowledge of Sudoku solutions – obviously a very common problem.
 Apart from that, it also demonstrates that Zero-Knowledge technology is not (necessarily) magic.
-**zudoku** is very intuitive, and does not need any mathematics.
+**zudoku** is very intuitive, and does not need any mathematics.<label for="sn-no-maths" class="margin-toggle sidenote-number"> </label><input type="checkbox" id="sn-no-maths" class="margin-toggle"/>
+<span class="sidenote">
+	This is also true for Sudokus: instead of digits, you can use any symbols you want.
+</span> 
 
 # zudoku
 
-The **zudoku**[^zudoku] proof system is an _interactive protocol_.
+The **zudoku**<label for="sn-zudoku" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-zudoku" class="margin-toggle"/> 
+<span class="sidenote">
+	Zero-Knowledge (ZK) + Sudoku ⇒ **zudoku**.
+</span> 
+proof system is an _interactive protocol_.
 That means Peggy and Victor have to play together for the entire thing to work.
 <!-- explain Sudoku rules? -->
 
@@ -102,13 +109,11 @@ Another great ressource, foccussed on SNARKs, is [Z-Cash's technology overview](
 
 # credits
 
-I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who also introduced me to the marvelous world of crypto.[^crypto]
+I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who also introduced me to the marvelous world of crypto.<label for="mn-crypto" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-crypto" class="margin-toggle"/>
+<span class="marginnote">
+	[“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
+</span>
 
 The Sudoku “AI Escargot” was created by [Arto Inkala](http://aisudoku.com/index_en.html) and is reproduced here with his friendly permission.
 
 This website is statically rendered by [Jekyll](https://jekyllrb.com/) with the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme and hosted by [GitHub Pages](https://pages.github.com/).
-
-
-[^no-math]: Even though Sudokus are commonly presented with digits, you can use any symbols you want.
-[^zudoku]: Zero-Knowledge (ZK) + Sudoku ⇒ **zudoku**.
-[^crypto]: [“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
