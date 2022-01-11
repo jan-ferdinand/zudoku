@@ -50,11 +50,11 @@ def find_solution(grid):
             exit(0)
         return
     next_empty = list(zip(*np.where(grid == 0)))[0]
-    next_grid = grid.copy()
     for i in range(1, 10):
-        next_grid[next_empty] = i
+        grid[next_empty] = i
         if selected_properties(grid):
-            if print_progress: print(next_grid, end="\n\n\n")
-            find_solution(next_grid)
+            if print_progress: print(grid, end="\n\n\n")
+            find_solution(grid)
+    grid[next_empty] = 0
 
 find_solution(ai_escargot)
