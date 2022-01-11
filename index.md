@@ -12,21 +12,24 @@ Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
 
 Peggy and Victor can use the **zudoku** Zero-Knowledge Proof System to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
+<label for="mn-prover-verifier" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
+<span class="marginnote">
+	Peggy is in the role of the _Prover_, because she proves she knows something.
+	Victor's role is the _Verifier_, because he checks whether Peggy really knows it.
+	These roles appear in every Zero-Knowledge Proof System, not just **zudoku**.
+</span>
 
 **zudoku** is immediately useful in proving knowledge of Sudoku solutions – obviously a very common problem.
 Apart from that, it also demonstrates that Zero-Knowledge technology is not (necessarily) magic.
-**zudoku** is very intuitive, and does not need any mathematics.<label for="sn-no-maths" class="margin-toggle sidenote-number"> </label><input type="checkbox" id="sn-no-maths" class="margin-toggle"/>
-<span class="sidenote">
-	This is also true for Sudokus: instead of digits, you can use any symbols you want.
-</span> 
+**zudoku** is very intuitive, and does not need any mathematics.
 
 # zudoku
 
-The **zudoku**<label for="sn-zudoku" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-zudoku" class="margin-toggle"/> 
-<span class="sidenote">
-	Zero-Knowledge (ZK) + Sudoku ⇒ **zudoku**.
+The **zudoku** proof system is an _interactive protocol_.
+<label for="mn-zudoku" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-zudoku" class="margin-toggle"/>
+<span class="marginnote">
+	**Z**ero-**K**nowledge + Sudoku ⇒ **zudoku**
 </span> 
-proof system is an _interactive protocol_.
 That means Peggy and Victor have to play together for the entire thing to work.
 <!-- explain Sudoku rules? -->
 
@@ -37,8 +40,12 @@ Peggy will lay out her solution using these cards, so she needs at least nine ca
 
 Lastly, Peggy and Victor need the Sudoku puzzle they are playing **zudoku** with.
 They have chosen a Sudoku called “AI Escargot”, which is extremely difficult to solve.
-Victor has printed the Sudoku.
-Printing the puzzle is not necessary, it just makes playing **zudoku** more convenient.
+Victor has printed the puzzle and puts it on the table.
+<label for="mn-print" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-print" class="margin-toggle"/>
+<span class="marginnote">
+	Printing the puzzle is not necessary.
+	It just makes playing **zudoku** more convenient.
+</span>
 
 ### setup
 
@@ -94,6 +101,10 @@ And again.
 And maybe one more time?
 
 Finally, Victor is convinced that Peggy does really know the solution.
+<label for="mn-complete" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-complete" class="margin-toggle"/>
+<span class="marginnote">
+	A Zero-Knowledge Proof System where an honest Prover can always convince an honest Verifier is called _complete_.
+</span>
 But why can he be so sure that Peggy didn't cheat?
 
 ## catching cheaters
@@ -101,6 +112,11 @@ But why can he be so sure that Peggy didn't cheat?
 The mischievous Mallory overheard Peggy and Victor perform **zudoku**.
 Mallory is not a great Sudoku puzzler, and she does not know the solution.
 However, she thinks that using **zudoku**, she can trick Victor into believing that she knows the solution.
+
+<label for="mn-sound" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
+<span class="marginnote">
+	A Zero-Knowledge Proof System where a dishonest Prover can almost never convince an honest Verifier is called _sound_.
+</span>
 
 # further reading
 
