@@ -11,7 +11,7 @@ Peggy appears to be in a pickle.
 Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
 
-Peggy and Victor can use the **zudoku** Zero-Knowledge Proof System to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
+Peggy and Victor can use the card-based **zudoku** Zero-Knowledge Proof System to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
 <label for="mn-prover-verifier" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
 	Peggy is in the role of the _Prover_, because she proves she knows something.
@@ -36,10 +36,9 @@ That means Peggy and Victor have to play together for the entire thing to work.
 Furthermore, Peggy needs some cards.
 All cards need to have the same backside.
 The front of a card is one of the digits appearing in the Sudoku.
-Peggy will lay out her solution using these cards, so she needs at least nine cards of every digit.
+Because Peggy will lay out her solution using these cards, she needs at least nine cards of every digit.
 
 Lastly, Peggy and Victor need the Sudoku puzzle they are playing **zudoku** with.
-They have chosen a Sudoku called “AI Escargot”, which is extremely difficult to solve.
 Victor has printed the puzzle and puts it on the table.
 <label for="mn-print" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-print" class="margin-toggle"/>
 <span class="marginnote">
@@ -49,9 +48,9 @@ Victor has printed the puzzle and puts it on the table.
 
 ### setup
 
-Once Peggy has her cards and Victor has the Sudoku, they start with the setup for **zudoku**.
-Peggy and Victor use Peggy's cards to mimic the givens of the Sudoku:
-every digit printed on the grid is covered with a card showing the same digit, with the digit visible.
+Once Peggy has her cards and Victor has the Sudoku grid, they start with the setup for **zudoku**.
+Peggy and Victor use Peggy's cards to mimic the puzzle:
+every digit printed on the grid is covered with a card showing the same digit, and the digit is visible.
 
 When all printed digits are covered, the Sudoku essentially still looks the same.
 However, instead of Victor's print-out, Peggy's cards are used.
@@ -91,20 +90,23 @@ Even though Victor has confirmed that Peggy has put her cards in a way that the 
 After all, the rules of Sudoku apply to rows, columns and boxes, not just to rows!
 He tells Peggy that he wants to go again.
 
-As before, they set up the Sudoku puzzle by placing cards face-up on the printed digits, and Peggy lays in the solution again.
+As before, they set up the Sudoku puzzle by placing cards face-up on the printed digits, and Peggy lays in the solution face-down again.
+Then they turn all cards so that the backside is showing.
 Now, Victor can make the same choice as before:
 check the rows, or the columns, or the boxes.
-Again, he verifies that the corresponding sections comply with Sudoku rules by shuffling and turning over the cards.
+Again, he verifies that the chosen sections comply with Sudoku rules by shuffling and turning over the cards.
 
 If Victor is still not convinced, he asks Peggy to go again.
 And again.
 And maybe one more time?
 
-Finally, Victor is convinced that Peggy does really know the solution.
+Because Peggy always puts the correct solution, no matter whether Victors chooses rows, columns, or boxes, he will always find that the rules of Sudoku are upheld.
+After playing **zudoku** for enough rounds, Victor is finally convinced.
 <label for="mn-complete" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-complete" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where an honest Prover can always convince an honest Verifier is called _complete_.
 </span>
+
 But why can he be so sure that Peggy didn't cheat?
 
 ## catching cheaters
@@ -130,6 +132,7 @@ I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu
 	[“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
 </span>
 
-The Sudoku “AI Escargot” was created by [Arto Inkala](http://aisudoku.com/index_en.html) and is reproduced here with his friendly permission.
+The Sudoku Peggy and Victor were competing over is “AI Escargot” by [Arto Inkala](http://aisudoku.com/index_en.html).
+It is reproduced here with his friendly permission.
 
-This website is statically rendered by [Jekyll](https://jekyllrb.com/) with the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme and hosted by [GitHub Pages](https://pages.github.com/).
+This website is statically rendered by [Jekyll](https://jekyllrb.com/) with the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme and hosted on [GitHub Pages](https://pages.github.com/).
