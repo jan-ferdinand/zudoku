@@ -15,6 +15,6 @@ remote_theme: mmistakes/jekyll-theme-basically-basic@1.4.5
 
 # custom footer (hackish)
 copyright: '[![CC BY 4.0](assets/pic/cc_by.svg)](https://creativecommons.org/licenses/by/4.0/) \|
-    made with 🤍 by [jfs](jfs.sh) \|
+    made with 🤍 by [jfs](https://jfs.sh) \|
     💌 [feedback](mailto:zudoku@jfs.sh) \|
     ![github](assets/pic/github_mark.svg) [improve this page](https://github.com/42ndTowel/zudoku)'
