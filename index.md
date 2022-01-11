@@ -115,10 +115,36 @@ The mischievous Mallory overheard Peggy and Victor perform **zudoku**.
 Mallory is not a great Sudoku puzzler, and she does not know the solution.
 However, she thinks that using **zudoku**, she can trick Victor into believing that she knows the solution.
 
+Even though Mallory was not able to find the Sudoku's correct solution, she did prepare three “fake solutions”.
+These fakes are crafted in an attempt to fool Victor with **zudoku**.
+
+In Mallory's first fake, every digit appears exactly once per row, and also exactly once per column, but the boxes are all wrong.
+
+The other two fakes are similar:
+in the second one, every digit appears exactly once per column and per box, but some digits appear twice or more in the rows.
+The third fake has inconsistent columns, but the rows and the boxes are fine.
+
+Mallory and Victor start playing **zudoku**.
+First, they perform the setup.
+Now, Mallory needs to choose which of her fake solutions she wants to use.
+She picks the fake where the rows and the columns are fine, but the boxes aren't, and puts the cards face-down in the grid.
+Then she turns all remaining visible digits around.
+
+Victor can now choose whether he wants to check rows, columns, or boxes.
+His decision is independent of Mallory's choice.
+
+If Victor chooses to check the boxes, he will immediately realize that Mallory is cheating, call her out on it, and stop playing **zudoku** with her.
+Should he instead choose to check the rows or the columns, he won't catch her in this round.
+But Victor is not convinced after just one round, so he asks Mallory to play again.
+
+The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor's choice.
 <label for="mn-sound" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where a dishonest Prover can almost never convince an honest Verifier is called _sound_.
 </span>
+At this point, probably even Victor himself doesn't yet know what he will check!
+Once Mallory has made her guess, she cannot change the cards on the grid anymore – she is _committed_.
+Guessing correctly many times in a row is quite unlikely.
 
 # further reading
 
