@@ -2,6 +2,11 @@
 layout: home
 ---
 Peggy and Victor are competing on who can solve a certain Sudoku puzzle the fastest.
+<label for="mn-sudoku" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-sudoku" class="margin-toggle"/>
+<span class="marginnote">
+	Sudoku rules:
+	fill a nine-by-nine grid with digits, such that each column, each row, and each of the three-by-three subgrids – the _boxes_ – contains all digits from 1 to 9 exactly once.
+</span> 
 After racking her brain for hours, Peggy finds the solution – and she's first!
 Now, she wants to prove to Victor that she has indeed solved the Sudoku.
 Peggy is a good sport, and she doesn't want to ruin the puzzle for Victor.
@@ -31,7 +36,7 @@ The **zudoku** proof system is an _interactive protocol_.
 	**Z**ero-**K**nowledge + Sudoku ⇒ **zudoku**
 </span> 
 That means Peggy and Victor have to play together for the entire thing to work.
-<!-- explain Sudoku rules? -->
+
 
 Furthermore, Peggy needs some cards.
 All cards need to have the same backside.
