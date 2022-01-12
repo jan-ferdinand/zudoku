@@ -73,6 +73,11 @@ The board is now completely filled with cards facing down.
 Now it's Victor's turn.
 Theoretically, he could just turn all or some cards around – but that way he'd learn something about the solution!
 Instead, Victor chooses whether he wants to check the Sudoku's rows, or the columns, or the boxes.
+<label for="mn-randomness" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-randomness" class="margin-toggle"/>
+<span class="marginnote">
+	It's best that Victor's choice is as random as possible, for example by rolling a die:
+	rolling 1 or 2 means checking rows, 3 and 4 mean checking columns, and 5 and 6 mean boxes.
+</span>
 
 Victor chooses to check the rows.
 He takes all nine cards in the first row, shuffles them, and turns them around.
@@ -86,6 +91,14 @@ He proceeds to the next row, takes the cards, shuffles them, then turns them aro
 Again, he checks that the rules of Sudoku are followed – all digits appear exactly once.
 
 This way, Victor checks all rows.
+<label for="mn-stick-to-choice" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-stick-to-choice" class="margin-toggle"/>
+<span class="marginnote">
+	It's very important that Victor sticks with his choice, and checks _only_ rows, or _only_ columns, or _only_ boxes.
+	If, for example, Victor were to check a column after having removed the first row, he would have only eight cards.
+	One digit would be missing:
+	the digit where the checked column and the first row intersect.
+	This way, Victor gets a hint about the solution.
+</span>
 If, in any row, he were to find some digit twice, he would know that the rules of Sudoku were violated – which would mean that Peggy did not actually put the solution in the board!
 But Peggy has put the real solution, so for every row, Victor finds every digit exactly once.
 
