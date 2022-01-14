@@ -79,8 +79,6 @@ However, instead of Victor's print-out, Peggy's cards are used.
 Peggy puts the solution with her cards facing down into the free cells.
 She needs to make sure that Victor can't tell which card she puts where – otherwise she would be giving him hints!
 
-When Peggy is done putting down the solution, she turns around all cards that are still showing a digit.
-The board is now completely filled with cards facing down.
 <figure>
 	<img src="assets/pic/zk_solve.jpg" alt="Peggy puts the solution face-down in the grid." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
 	<figcaption style="text-align: center;">
