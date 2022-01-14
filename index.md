@@ -164,14 +164,22 @@ At this point, probably even Victor himself doesn't yet know what he will check!
 Once Mallory has made her guess, she cannot change the cards on the grid anymore – she is _committed_.
 Guessing correctly many times in a row is quite unlikely.
 
-# further reading
-
-For a technical, in-depth, hands-on tutorial on STARKs, I recommend [Alan Szepieniec](https://asz.ink/)'s excellent [STARK Anatomy](https://aszepieniec.github.io/stark-anatomy/).
-Another great resource, focused on SNARKs, is [Z-Cash's technology overview](https://z.cash/technology/zksnarks/).
-
 # credits
 
-I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who also introduced me to the marvelous world of crypto.
+**zudoku** is based on [this paper](https://www.wisdom.weizmann.ac.il/~naor/PAPERS/sudoku.pdf).
+<label for="mn-source" class="margin-toggle">⊕</label><input type="checkbox" id="mn-source" class="margin-toggle"/>
+<span class="marginnote">
+	[Ronen Gradwohl](https://dblp.org/pid/90/2651.html),
+	[Moni Naor](https://dblp.org/pid/n/MoniNaor.html),
+	[Benny Pinkas](https://dblp.org/pid/31/1735.html),
+	and [Guy N. Rothblum](https://dblp.org/pid/00/6232.html):
+	“Cryptographic and Physical Zero-Knowledge Proof Systems for Solutions of Sudoku Puzzles”<br>
+</span>
+It is essentially a card-based variant of Protocol 6.
+The paper is a lot more explicit about the involved assumptions, and formally analyzes soundness errors.
+It is a good start for further reading.
+
+I first heard about the protocol presented here, as well as the name **zudoku**, from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who introduced me to the marvelous world of crypto.
 <label for="mn-crypto" class="margin-toggle">⊕</label><input type="checkbox" id="mn-crypto" class="margin-toggle"/>
 <span class="marginnote">
 	[“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
