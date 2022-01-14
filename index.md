@@ -37,7 +37,6 @@ The **zudoku** proof system is an _interactive protocol_.
 </span> 
 That means Peggy and Victor have to play together for the entire thing to work.
 
-
 Furthermore, Peggy needs some cards.
 All cards need to have the same backside.
 The front of a card is one of the digits appearing in the Sudoku.
@@ -158,8 +157,8 @@ The mischievous Mallory overheard Peggy and Victor perform **zudoku**.
 Mallory is not a great Sudoku puzzler, and she does not know the solution.
 However, she thinks that using **zudoku**, she can trick Victor into believing that she knows the solution.
 
-Even though Mallory was not able to find the Sudoku's correct solution, she did prepare three “fake solutions”.
-These fakes are crafted in an attempt to fool Victor with **zudoku**.
+Even though Mallory was not able to find the Sudoku's correct solution, she did prepare three “fake solutions.”
+These fakes are crafted in an attempt to fool Victor.
 
 In Mallory's first fake, every digit appears exactly once per row, and also exactly once per column, but the boxes are all wrong.
 
@@ -189,7 +188,7 @@ But Victor is not convinced after just one round, so he asks Mallory to play aga
 If they play for long enough, it is very likely that Mallory is caught.
 <label for="mn-probability" class="margin-toggle">⊕</label><input type="checkbox" id="mn-probability" class="margin-toggle"/>
 <span class="marginnote">
-	After _n_ many rounds, the probability is 1 - (⅔)<sup>_n_</sup>.
+	After _n_ many rounds, the probability that cheating Mallory is caught is 1 - (⅔)<sup>_n_</sup>.
 	For 4 rounds, that's 80%.
 	10 rounds gives over 98%.
 </span>
