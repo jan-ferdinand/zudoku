@@ -2,7 +2,7 @@
 layout: home
 ---
 Peggy and Victor are competing on who can solve a certain Sudoku puzzle the fastest.
-<label for="mn-sudoku" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-sudoku" class="margin-toggle"/>
+<label for="mn-sudoku" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sudoku" class="margin-toggle"/>
 <span class="marginnote">
 	Sudoku rules:
 	fill a nine-by-nine grid with digits, such that each column, each row, and each of the three-by-three subgrids – the _boxes_ – contains all digits from 1 to 9 exactly once.
@@ -17,7 +17,7 @@ Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
 
 Peggy and Victor can use the card-based **zudoku** Zero-Knowledge Proof System to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
-<label for="mn-prover-verifier" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
+<label for="mn-prover-verifier" class="margin-toggle">⊕</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
 	Peggy is in the role of the _Prover_, because she proves she knows something.
 	Victor's role is the _Verifier_, because he checks whether Peggy really knows it.
@@ -31,7 +31,7 @@ Apart from that, it also demonstrates that Zero-Knowledge technology is not (nec
 # zudoku
 
 The **zudoku** proof system is an _interactive protocol_.
-<label for="mn-zudoku" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-zudoku" class="margin-toggle"/>
+<label for="mn-zudoku" class="margin-toggle">⊕</label><input type="checkbox" id="mn-zudoku" class="margin-toggle"/>
 <span class="marginnote">
 	**Z**ero-**K**nowledge + Sudoku ⇒ **zudoku**
 </span> 
@@ -45,7 +45,7 @@ Because Peggy will lay out her solution using these cards, she needs at least ni
 
 Lastly, Peggy and Victor need the Sudoku puzzle they are playing **zudoku** with.
 Victor has printed the puzzle and puts it on the table.
-<label for="mn-print" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-print" class="margin-toggle"/>
+<label for="mn-print" class="margin-toggle">⊕</label><input type="checkbox" id="mn-print" class="margin-toggle"/>
 <span class="marginnote">
 	Printing the puzzle is not necessary.
 	It just makes playing **zudoku** more convenient.
@@ -73,7 +73,7 @@ The board is now completely filled with cards facing down.
 Now it's Victor's turn.
 Theoretically, he could just turn all or some cards around – but that way he'd learn something about the solution!
 Instead, Victor chooses whether he wants to check the Sudoku's rows, or the columns, or the boxes.
-<label for="mn-randomness" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-randomness" class="margin-toggle"/>
+<label for="mn-randomness" class="margin-toggle">⊕</label><input type="checkbox" id="mn-randomness" class="margin-toggle"/>
 <span class="marginnote">
 	It's best that Victor's choice is as random as possible, for example by rolling a die:
 	rolling 1 or 2 means checking rows, 3 and 4 mean checking columns, and 5 and 6 mean boxes.
@@ -91,7 +91,7 @@ He proceeds to the next row, takes the cards, shuffles them, then turns them aro
 Again, he checks that the rules of Sudoku are followed – all digits appear exactly once.
 
 This way, Victor checks all rows.
-<label for="mn-stick-to-choice" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-stick-to-choice" class="margin-toggle"/>
+<label for="mn-stick-to-choice" class="margin-toggle">⊕</label><input type="checkbox" id="mn-stick-to-choice" class="margin-toggle"/>
 <span class="marginnote">
 	It's very important that Victor sticks with his choice, and checks _only_ rows, or _only_ columns, or _only_ boxes.
 	If, for example, Victor were to check a column after having removed the first row, he would have only eight cards.
@@ -120,7 +120,7 @@ And maybe one more time?
 
 Because Peggy always puts the correct solution, no matter whether Victors chooses rows, columns, or boxes, he will always find that the rules of Sudoku are upheld.
 After playing **zudoku** for enough rounds, Victor is finally convinced.
-<label for="mn-complete" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-complete" class="margin-toggle"/>
+<label for="mn-complete" class="margin-toggle">⊕</label><input type="checkbox" id="mn-complete" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where an honest Prover can always convince an honest Verifier is called _complete_.
 </span>
@@ -156,7 +156,7 @@ Should he instead choose to check the rows or the columns, he won't catch her in
 But Victor is not convinced after just one round, so he asks Mallory to play again.
 
 The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor's choice.
-<label for="mn-sound" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
+<label for="mn-sound" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where a dishonest Prover can almost never convince an honest Verifier is called _sound_.
 </span>
@@ -171,7 +171,8 @@ Another great resource, focused on SNARKs, is [Z-Cash's technology overview](htt
 
 # credits
 
-I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who also introduced me to the marvelous world of crypto.<label for="mn-crypto" class="margin-toggle">&#8853;</label><input type="checkbox" id="mn-crypto" class="margin-toggle"/>
+I learned about **zudoku** from [Jörn Müller-Quade](https://crypto.iti.kit.edu/english/head-of-institute.php), who also introduced me to the marvelous world of crypto.
+<label for="mn-crypto" class="margin-toggle">⊕</label><input type="checkbox" id="mn-crypto" class="margin-toggle"/>
 <span class="marginnote">
 	[“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
 </span>
