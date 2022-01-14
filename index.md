@@ -51,11 +51,25 @@ Victor has printed the puzzle and puts it before them.
 	It just makes playing **zudoku** more convenient.
 </span>
 
+<figure>
+	<img src="assets/pic/zk_board.jpg" alt="The Sudoku puzzle and the required cards." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
+	<figcaption style="text-align: center;">
+		The Sudoku puzzle and the required cards.
+	</figcaption>
+</figure>
+
 ### setup
 
 Once Peggy has her cards and Victor has the Sudoku grid, they start with the setup for **zudoku**.
 Peggy and Victor use Peggy's cards to mimic the puzzle:
 every digit printed on the grid is covered with a card showing the same digit, and the digit is visible.
+
+<figure>
+	<img src="assets/pic/zk_setup.jpg" alt="Peggy and Victor are setting up a round of zudoku." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
+	<figcaption style="text-align: center;">
+		Peggy and Victor are setting up a round of <b>zudoku</b>.
+	</figcaption>
+</figure>
 
 When all printed digits are covered, the Sudoku essentially still looks the same.
 However, instead of Victor's print-out, Peggy's cards are used.
@@ -67,6 +81,12 @@ She needs to make sure that Victor can't tell which card she puts where – othe
 
 When Peggy is done putting down the solution, she turns around all cards that are still showing a digit.
 The board is now completely filled with cards facing down.
+<figure>
+	<img src="assets/pic/zk_solve.jpg" alt="Peggy puts the solution face-down in the grid." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
+	<figcaption style="text-align: center;">
+		Peggy puts the solution face-down in the grid.
+	</figcaption>
+</figure>
 
 ### challenge
 
@@ -83,6 +103,13 @@ Victor chooses to check the rows.
 He takes all nine cards in the first row, shuffles them, and turns them around.
 Then he checks that all digits, 1 to 9, are there – none missing, none double.
 Since Peggy has put the correct solution for the Sudoku, this is exactly what he finds.
+
+<figure>
+	<img src="assets/pic/zk_challenge.jpg" alt="Victor checks the first row: all digits must appear exactly once." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
+	<figcaption style="text-align: center;">
+		Victor checks the first row: all digits must appear exactly once.
+	</figcaption>
+</figure>
 
 Shuffling the cards makes sure that Victor does not know the position of a card on the board.
 This way, even after turning the cards around, he doesn't know anything about the solution.
@@ -137,6 +164,13 @@ Even though Mallory was not able to find the Sudoku's correct solution, she did 
 These fakes are crafted in an attempt to fool Victor with **zudoku**.
 
 In Mallory's first fake, every digit appears exactly once per row, and also exactly once per column, but the boxes are all wrong.
+
+<figure>
+	<img src="assets/pic/mallory.jpg" alt="Mallory's first fake solution." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
+	<figcaption style="text-align: center;">
+		Mallory's first fake solution: rows and columns have all digits exactly once, but the boxes are completely wrong.
+	</figcaption>
+</figure>
 
 The other two fakes are similar:
 in the second one, every digit appears exactly once per column and per box, but some digits appear twice or more in the rows.
