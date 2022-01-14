@@ -16,7 +16,7 @@ Peggy appears to be in a pickle.
 Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
 
-Peggy and Victor can use the card-based **zudoku** Zero-Knowledge Proof System to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
+Peggy and Victor can use the card-based **zudoku** to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
 <label for="mn-prover-verifier" class="margin-toggle">⊕</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
 	Peggy is in the role of the _Prover_, because she proves she knows something.
@@ -154,6 +154,13 @@ His decision is independent of Mallory's choice.
 If Victor chooses to check the boxes, he will immediately realize that Mallory is cheating, call her out on it, and stop playing **zudoku** with her.
 Should he instead choose to check the rows or the columns, he won't catch her in this round.
 But Victor is not convinced after just one round, so he asks Mallory to play again.
+If they play for long enough, it is very likely that Mallory is caught.
+<label for="mn-probability" class="margin-toggle">⊕</label><input type="checkbox" id="mn-probability" class="margin-toggle"/>
+<span class="marginnote">
+	After _n_ many rounds, the probability is 1 - (⅔)<sup>_n_</sup>.
+	For 4 rounds, that's 80%.
+	10 rounds gives over 98%.
+</span>
 
 The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor's choice.
 <label for="mn-sound" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
@@ -163,6 +170,10 @@ The main reason why Mallory is very likely to be caught cheating is that she has
 At this point, probably even Victor himself doesn't yet know what he will check!
 Once Mallory has made her guess, she cannot change the cards on the grid anymore – she is _committed_.
 Guessing correctly many times in a row is quite unlikely.
+<label for="mn-argument" class="margin-toggle">⊕</label><input type="checkbox" id="mn-argument" class="margin-toggle"/>
+<span class="marginnote">
+	Technically, because there's a slim chance that Mallory is never caught cheating, **zudoku** is an _Argument_ System, not a Proof System.
+</span>
 
 # credits
 
