@@ -230,4 +230,4 @@ I first heard about the protocol presented here, as well as the name **zudoku**,
 The Sudoku that Peggy and Victor were competing over is “AI Escargot” by [Arto Inkala](http://aisudoku.com/index_en.html).
 It is reproduced here with his friendly permission.
 
-This website is statically rendered by [Jekyll](https://jekyllrb.com/) with the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme and hosted on [GitHub Pages](https://pages.github.com/).
+This website is hosted on [GitHub Pages](https://pages.github.com/), statically rendered by [Jekyll](https://jekyllrb.com/), and uses the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme with margin notes from [Tufte CSS](https://edwardtufte.github.io/tufte-css/) mixed in.
