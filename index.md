@@ -7,26 +7,26 @@ Peggy and Victor are competing on who can solve a certain Sudoku puzzle the fast
 	Sudoku rules:
 	fill a nine-by-nine grid with digits, such that each column, each row, and each of the three-by-three subgrids – called _boxes_ – contains each digit from 1 to 9 exactly once.
 </span> 
-After racking her brain for hours, Peggy finds the solution – and she's first!
+After racking her brain for hours, Peggy finds the solution – and she\'s first!
 Now, she wants to prove to Victor that she has indeed solved the Sudoku.
-Peggy is a good sport, and she doesn't want to ruin the puzzle for Victor.
+Peggy is a good sport, and she doesn\'t want to ruin the puzzle for Victor.
 This means that she cannot just show the solution to Victor.
 Peggy appears to be in a pickle.
 
 Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
 
-Peggy and Victor can use the card-based **zudoku** to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
+Peggy and Victor can use the card-based **zudoku** to convince Victor that Peggy knows the solution – and Victor won\'t get any hint about the solution.
 <label for="mn-prover-verifier" class="margin-toggle">⊕</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
 	Peggy is in the role of the _Prover_: she proves she knows the solution.
-	Victor's role is called _Verifier_, since he checks whether Peggy really knows it.
+	Victor\'s role is called _Verifier_, since he checks whether Peggy really knows it.
 	These roles appear in every Zero-Knowledge Proof System, not just **zudoku**.
 </span>
 
 **zudoku** is immediately useful in proving knowledge of Sudoku solutions – obviously a very common problem.
 Apart from that, it demonstrates that Zero-Knowledge technology is not (necessarily) magic.
-**zudoku** is very intuitive and doesn't need any mathematics or programming.
+**zudoku** is very intuitive and doesn\'t need any mathematics or programming.
 
 # zudoku
 
@@ -60,7 +60,7 @@ Victor has printed the puzzle and puts it before them.
 ### setup
 
 Once Peggy has her cards and Victor has the Sudoku grid, they start with the setup for **zudoku**.
-Peggy and Victor use Peggy's cards to mimic the puzzle:
+Peggy and Victor use Peggy\'s cards to mimic the puzzle:
 every digit printed on the grid is covered with a card showing the same digit, and the digit is visible.
 
 <figure>
@@ -71,12 +71,12 @@ every digit printed on the grid is covered with a card showing the same digit, a
 </figure>
 
 When all printed digits are covered, the Sudoku essentially still looks the same.
-However, instead of Victor's print-out, Peggy's cards are used.
+However, instead of Victor\'s print-out, Peggy\'s cards are used.
 
 ### commit
 
 Peggy puts the solution with her cards facing down into the free cells.
-She needs to make sure that Victor can't tell which card she puts where – otherwise she would be giving him hints!
+She needs to make sure that Victor can\'t tell which card she puts where – otherwise she would be giving him hints!
 
 <figure>
 	<img src="assets/pic/zk_solve.jpg" alt="Peggy puts the solution face-down in the grid." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
@@ -87,12 +87,12 @@ She needs to make sure that Victor can't tell which card she puts where – othe
 
 ### challenge
 
-Now it's Victor's turn.
-Theoretically, he could just turn all or some cards around – but that way he'd learn something about the solution!
-Instead, Victor chooses whether he wants to check the Sudoku's rows, or the columns, or the boxes.
+Now it\'s Victor\'s turn.
+Theoretically, he could just turn all or some cards around – but that way he\'d learn something about the solution!
+Instead, Victor chooses whether he wants to check the Sudoku\'s rows, or the columns, or the boxes.
 <label for="mn-randomness" class="margin-toggle">⊕</label><input type="checkbox" id="mn-randomness" class="margin-toggle"/>
 <span class="marginnote">
-	It's best that Victor's choice is as random as possible, for example by rolling a die:
+	It\'s best that Victor\'s choice is as random as possible, for example by rolling a die:
 	rolling 1 or 2 means checking rows, 3 and 4 mean checking columns, and 5 and 6 mean boxes.
 </span>
 
@@ -109,7 +109,7 @@ Since Peggy has put the correct solution for the Sudoku, this is exactly what he
 </figure>
 
 Shuffling the cards makes sure that Victor does not know the position of a card on the board.
-This way, even after turning the cards around, he doesn't know anything about the solution.
+This way, even after turning the cards around, he doesn\'t know anything about the solution.
 
 He proceeds to the next row, takes the cards, shuffles them, then turns them around.
 Again, he checks that the rules of Sudoku are followed – all digits appear exactly once.
@@ -117,7 +117,7 @@ Again, he checks that the rules of Sudoku are followed – all digits appear exa
 This way, Victor checks all rows.
 <label for="mn-stick-to-choice" class="margin-toggle">⊕</label><input type="checkbox" id="mn-stick-to-choice" class="margin-toggle"/>
 <span class="marginnote">
-	It's very important that Victor sticks with his choice, and checks _only_ rows, or _only_ columns, or _only_ boxes.
+	It\'s very important that Victor sticks with his choice, and checks _only_ rows, or _only_ columns, or _only_ boxes.
 	If, for example, Victor were to check a column after having removed the first row, he would have only eight cards.
 	One digit would be missing:
 	the digit where the checked column and the first row intersect.
@@ -149,7 +149,7 @@ After playing **zudoku** for enough rounds, Victor is finally convinced.
 	A Zero-Knowledge Proof System where an honest Prover can always convince an honest Verifier is called _complete_.
 </span>
 
-But why can he be so sure that Peggy didn't cheat?
+But why can he be so sure that Peggy didn\'t cheat?
 
 ## catching cheaters
 
@@ -157,10 +157,10 @@ The mischievous Mallory overheard Peggy and Victor perform **zudoku**.
 Mallory is not a great Sudoku puzzler, and she does not know the solution.
 However, she thinks that using **zudoku**, she can trick Victor into believing that she knows the solution.
 
-Even though Mallory was not able to find the Sudoku's correct solution, she did prepare three “fake solutions.”
+Even though Mallory was not able to find the Sudoku\'s correct solution, she did prepare three “fake solutions.”
 These fakes are crafted in an attempt to fool Victor.
 
-In Mallory's first fake, every digit appears exactly once per row, and also exactly once per column, but the boxes are all wrong.
+In Mallory\'s first fake, every digit appears exactly once per row, and also exactly once per column, but the boxes are all wrong.
 
 <figure>
 	<img src="assets/pic/mallory.jpg" alt="Mallory's first fake solution." style="width: 70%; display: block;margin-left: auto; margin-right: auto;"/>
@@ -176,34 +176,34 @@ The third fake has inconsistent columns, but the rows and the boxes are fine.
 Mallory and Victor start playing **zudoku**.
 First, they perform the setup.
 Now, Mallory needs to choose which of her fake solutions she wants to use.
-She picks the fake where the rows and the columns are fine, but the boxes aren't, and puts the cards face-down in the grid.
+She picks the fake where the rows and the columns are fine, but the boxes aren\'t, and puts the cards face-down in the grid.
 Then she turns all remaining visible digits around.
 
 Victor can now choose whether he wants to check rows, columns, or boxes.
-His decision is independent of Mallory's choice.
+His decision is independent of Mallory\'s choice.
 
 If Victor chooses to check the boxes, he will immediately realize that Mallory is cheating, call her out on it, and stop playing **zudoku** with her.
-Should he instead choose to check the rows or the columns, he won't catch her in this round.
+Should he instead choose to check the rows or the columns, he won\'t catch her in this round.
 But Victor is not convinced after just one round, so he asks Mallory to play again.
 If they play for long enough, it is very likely that Mallory is caught.
 <label for="mn-probability" class="margin-toggle">⊕</label><input type="checkbox" id="mn-probability" class="margin-toggle"/>
 <span class="marginnote">
 	After _n_ many rounds, the probability that cheating Mallory is caught is 1 - (⅔)<sup>_n_</sup>.
-	For 4 rounds, that's 80%.
+	For 4 rounds, that\'s 80%.
 	10 rounds gives over 98%.
 </span>
 
-The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor's choice.
+The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor\'s choice.
 <label for="mn-sound" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where a dishonest Prover can almost never convince an honest Verifier is called _sound_.
 </span>
-At this point, probably even Victor himself doesn't yet know what he will check!
+At this point, probably even Victor himself doesn\'t yet know what he will check!
 Once Mallory has made her guess, she cannot change the cards on the grid anymore – she is _committed_.
 Guessing correctly many times in a row is quite unlikely.
 <label for="mn-argument" class="margin-toggle">⊕</label><input type="checkbox" id="mn-argument" class="margin-toggle"/>
 <span class="marginnote">
-	Technically, because there's a slim chance that Mallory is never caught cheating, **zudoku** is an _Argument_ System, not a Proof System.
+	Technically, because there\'s a slim chance that Mallory is never caught cheating, **zudoku** is an _Argument_ System, not a Proof System.
 </span>
 
 # credits
