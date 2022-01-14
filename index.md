@@ -5,7 +5,7 @@ Peggy and Victor are competing on who can solve a certain Sudoku puzzle the fast
 <label for="mn-sudoku" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sudoku" class="margin-toggle"/>
 <span class="marginnote">
 	Sudoku rules:
-	fill a nine-by-nine grid with digits, such that each column, each row, and each of the three-by-three subgrids – the _boxes_ – contains all digits from 1 to 9 exactly once.
+	fill a nine-by-nine grid with digits, such that each column, each row, and each of the three-by-three subgrids – called _boxes_ – contains each digit from 1 to 9 exactly once.
 </span> 
 After racking her brain for hours, Peggy finds the solution – and she's first!
 Now, she wants to prove to Victor that she has indeed solved the Sudoku.
@@ -19,14 +19,14 @@ They seem to be the perfect solution to her problem.
 Peggy and Victor can use the card-based **zudoku** to convince Victor that Peggy knows the solution – and Victor won't get any hint about the solution.
 <label for="mn-prover-verifier" class="margin-toggle">⊕</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
-	Peggy is in the role of the _Prover_, because she proves she knows something.
-	Victor's role is the _Verifier_, because he checks whether Peggy really knows it.
+	Peggy is in the role of the _Prover_: she proves she knows the solution.
+	Victor's role is called _Verifier_, since he checks whether Peggy really knows it.
 	These roles appear in every Zero-Knowledge Proof System, not just **zudoku**.
 </span>
 
 **zudoku** is immediately useful in proving knowledge of Sudoku solutions – obviously a very common problem.
-Apart from that, it also demonstrates that Zero-Knowledge technology is not (necessarily) magic.
-**zudoku** is very intuitive, and does not need any mathematics.
+Apart from that, it demonstrates that Zero-Knowledge technology is not (necessarily) magic.
+**zudoku** is very intuitive and doesn't need any mathematics or programming.
 
 # zudoku
 
@@ -44,7 +44,7 @@ The front of a card is one of the digits appearing in the Sudoku.
 Because Peggy will lay out her solution using these cards, she needs at least nine cards of every digit.
 
 Lastly, Peggy and Victor need the Sudoku puzzle they are playing **zudoku** with.
-Victor has printed the puzzle and puts it on the table.
+Victor has printed the puzzle and puts it before them.
 <label for="mn-print" class="margin-toggle">⊕</label><input type="checkbox" id="mn-print" class="margin-toggle"/>
 <span class="marginnote">
 	Printing the puzzle is not necessary.
@@ -60,7 +60,7 @@ every digit printed on the grid is covered with a card showing the same digit, a
 When all printed digits are covered, the Sudoku essentially still looks the same.
 However, instead of Victor's print-out, Peggy's cards are used.
 
-### solve
+### commit
 
 Peggy puts the solution with her cards facing down into the free cells.
 She needs to make sure that Victor can't tell which card she puts where – otherwise she would be giving him hints!
@@ -68,7 +68,7 @@ She needs to make sure that Victor can't tell which card she puts where – othe
 When Peggy is done putting down the solution, she turns around all cards that are still showing a digit.
 The board is now completely filled with cards facing down.
 
-### check
+### challenge
 
 Now it's Victor's turn.
 Theoretically, he could just turn all or some cards around – but that way he'd learn something about the solution!
@@ -196,7 +196,7 @@ I first heard about the protocol presented here, as well as the name **zudoku**,
 	[“Crypto” means Cryptography](https://en.wikipedia.org/wiki/Crypto_naming_controversy).
 </span>
 
-The Sudoku Peggy and Victor were competing over is “AI Escargot” by [Arto Inkala](http://aisudoku.com/index_en.html).
+The Sudoku that Peggy and Victor were competing over is “AI Escargot” by [Arto Inkala](http://aisudoku.com/index_en.html).
 It is reproduced here with his friendly permission.
 
 This website is statically rendered by [Jekyll](https://jekyllrb.com/) with the [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic) theme and hosted on [GitHub Pages](https://pages.github.com/).
