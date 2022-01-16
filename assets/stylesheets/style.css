@@ -2,6 +2,19 @@
 ---
 @import "";
 
+.zk-img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .zk-img {
+        width: 90%;
+    }
+}
+
 a:link,
 a:visited {
     color: inherit;
