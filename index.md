@@ -15,7 +15,6 @@ Peggy appears to be in a pickle.
 
 Luckily, Peggy has recently heard of _Zero-Knowledge Proof Systems_.
 They seem to be the perfect solution to her problem.
-
 Peggy and Victor can use the card-based **zudoku** to convince Victor that Peggy knows the solution – and Victor won\'t get any hint about the solution.
 <label for="mn-prover-verifier" class="margin-toggle">⊕</label><input type="checkbox" id="mn-prover-verifier" class="margin-toggle"/>
 <span class="marginnote">
@@ -37,10 +36,9 @@ The **zudoku** proof system is an _interactive protocol_.
 </span> 
 That means Peggy and Victor have to play together for the entire thing to work.
 
-Furthermore, Peggy needs some cards.
-All cards need to have the same backside.
-The front of a card is one of the digits appearing in the Sudoku.
-Because Peggy will lay out her solution using these cards, she needs at least nine cards of every digit.
+Furthermore, Peggy needs some cards, all with the same backside.
+The front of a card shows one of the digits 1 through 9.
+Because Peggy will lay out her solution using the cards, she needs nine cards per digit.
 
 Lastly, Peggy and Victor need the Sudoku puzzle they are playing **zudoku** with.
 Victor has printed the puzzle and puts it before them.
@@ -59,9 +57,9 @@ Victor has printed the puzzle and puts it before them.
 
 ### setup
 
-Once Peggy has her cards and Victor has the Sudoku grid, they start with the setup for **zudoku**.
-Peggy and Victor use Peggy\'s cards to mimic the puzzle:
-every digit printed on the grid is covered with a card showing the same digit, and the digit is visible.
+Peggy and Victor start with the setup for **zudoku**.
+They use Peggy\'s cards to mimic the puzzle:
+every digit printed on the grid is covered with a card showing the same digit, with the digit facing up.
 
 <figure>
 	<img src="assets/pic/zk_setup.jpg" alt="" class="zk-img" />
@@ -70,8 +68,11 @@ every digit printed on the grid is covered with a card showing the same digit, a
 	</figcaption>
 </figure>
 
-When all printed digits are covered, the Sudoku essentially still looks the same.
-However, instead of Victor\'s print-out, Peggy\'s cards are used.
+When all printed digits are covered, the Sudoku essentially still looks the same, except that instead of Victor\'s print-out, Peggy\'s cards are used.
+<label for="mn-print-2" class="margin-toggle">⊕</label><input type="checkbox" id="mn-print-2" class="margin-toggle"/>
+<span class="marginnote">
+	This is why printing the Sudoku is not necessary – laying out the puzzle using the cards is enough.
+</span>
 
 ### commit
 
@@ -92,7 +93,7 @@ Theoretically, he could just turn all or some cards around – but that way he\'
 Instead, Victor chooses whether he wants to check the Sudoku\'s rows, or the columns, or the boxes.
 <label for="mn-randomness" class="margin-toggle">⊕</label><input type="checkbox" id="mn-randomness" class="margin-toggle"/>
 <span class="marginnote">
-	It\'s best that Victor\'s choice is as random as possible, for example by rolling a die:
+	Ideally, Victor\'s choice is as random as possible, for example by rolling a die:
 	rolling 1 or 2 means checking rows, 3 and 4 mean checking columns, and 5 and 6 mean boxes.
 </span>
 
@@ -133,10 +134,9 @@ After all, the rules of Sudoku apply to rows, columns and boxes, not just to row
 He tells Peggy that he wants to go again.
 
 As before, they set up the Sudoku puzzle by placing cards face-up on the printed digits, and Peggy lays in the solution face-down again.
-Then they turn all cards so that the backside is showing.
 Now, Victor can make the same choice as before:
 check the rows, or the columns, or the boxes.
-Again, he verifies that the chosen sections comply with Sudoku rules by shuffling and turning over the cards.
+Again, he verifies that the chosen sections comply with Sudoku rules by shuffling the cards and turning them over.
 
 If Victor is still not convinced, he asks Peggy to go again.
 And again.
@@ -184,7 +184,7 @@ His decision is independent of Mallory\'s choice.
 
 If Victor chooses to check the boxes, he will immediately realize that Mallory is cheating, call her out on it, and stop playing **zudoku** with her.
 Should he instead choose to check the rows or the columns, he won\'t catch her in this round.
-But Victor is not convinced after just one round, so he asks Mallory to play again.
+But no matter his choice, Victor is not convinced after just one round, so he asks Mallory to play again.
 If they play for long enough, it is very likely that Mallory is caught.
 <label for="mn-probability" class="margin-toggle">⊕</label><input type="checkbox" id="mn-probability" class="margin-toggle"/>
 <span class="marginnote">
@@ -193,14 +193,14 @@ If they play for long enough, it is very likely that Mallory is caught.
 	10 rounds gives over 98%.
 </span>
 
-The main reason why Mallory is very likely to be caught cheating is that she has to guess which section Victor will not check _before_ knowing Victor\'s choice.
+After all, Mallory has to guess which section Victor will not check _before_ knowing Victor\'s choice.
 <label for="mn-sound" class="margin-toggle">⊕</label><input type="checkbox" id="mn-sound" class="margin-toggle"/>
 <span class="marginnote">
 	A Zero-Knowledge Proof System where a dishonest Prover can almost never convince an honest Verifier is called _sound_.
 </span>
-At this point, probably even Victor himself doesn\'t yet know what he will check!
+In fact, probably even Victor himself doesn\'t yet know what he will check, especially if he is rolling a die!
 Once Mallory has made her guess, she cannot change the cards on the grid anymore – she is _committed_.
-Guessing correctly many times in a row is quite unlikely.
+Correctly predicting Victor\'s choice – or the die – many times in a row is quite unlikely.
 <label for="mn-argument" class="margin-toggle">⊕</label><input type="checkbox" id="mn-argument" class="margin-toggle"/>
 <span class="marginnote">
 	Technically, because there\'s a slim chance that Mallory is never caught cheating, **zudoku** is an _Argument_ System, not a Proof System.
