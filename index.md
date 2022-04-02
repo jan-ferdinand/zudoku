@@ -36,7 +36,7 @@ The **zudoku** proof system is an _interactive protocol_.
 </span> 
 That means Peggy and Victor have to play together for the entire thing to work.
 
-Furthermore, Peggy needs some cards, all with the same backside.
+Furthermore, Peggy needs some cards, all with the same back side.
 The front of a card shows one of the digits 1 through 9.
 Because Peggy will lay out her solution using the cards, she needs nine cards per digit.
 
